@@ -12,8 +12,6 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
-    // 分号结尾
-    "semi": [2, "always"],
     // 2个空格缩进
     'indent': ["error", 2],
     // 禁止函数名前的空格

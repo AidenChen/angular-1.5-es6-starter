@@ -1,9 +1,9 @@
-import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-import routing from './about.route';
-import aboutComponent from './about.component';
+import angular from 'angular'
+import uiRouter from 'angular-ui-router'
+import routing from './about.route'
+import aboutComponent from './about.component'
 
-let aboutModule = angular.module('about', [
+export default angular.module('pages.about', [
   uiRouter
 ])
 
@@ -11,6 +11,4 @@ let aboutModule = angular.module('about', [
 
 .component('about', aboutComponent)
 
-.name;
-
-export default aboutModule;
+.name

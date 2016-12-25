@@ -1,9 +1,9 @@
 <navbar></navbar>
 <header>
-  <hero></hero>
+  <hero testword="$ctrl.name"></hero>
 </header>
 <main>
   <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
+    <h1 ng-click="$ctrl.randomName()">Found in {{ $ctrl.name }}.html</h1>
   </div>
 </main>

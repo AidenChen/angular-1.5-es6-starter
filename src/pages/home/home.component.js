@@ -1,12 +1,10 @@
-import template from './home.tpl.html';
-import controller from './home.controller';
-import './home.scss';
+import template from './home.tpl.html'
+import controller from './home.controller'
+import './home.scss'
 
-let homeComponent = {
+export default {
   restrict: 'E',
   bindings: {},
   template,
   controller
-};
-
-export default homeComponent;
+}

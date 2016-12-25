@@ -1,9 +1,9 @@
-import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-import routing from './home.route';
-import homeComponent from './home.component';
+import angular from 'angular'
+import uiRouter from 'angular-ui-router'
+import routing from './home.route'
+import homeComponent from './home.component'
 
-let homeModule = angular.module('home', [
+export default angular.module('pages.home', [
   uiRouter
 ])
 
@@ -11,6 +11,4 @@ let homeModule = angular.module('home', [
 
 .component('home', homeComponent)
 
-.name;
-
-export default homeModule;
+.name

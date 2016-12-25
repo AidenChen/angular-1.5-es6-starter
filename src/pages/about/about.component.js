@@ -1,12 +1,10 @@
-import template from './about.tpl.html';
-import controller from './about.controller';
-import './about.scss';
+import template from './about.tpl.html'
+import controller from './about.controller'
+import './about.scss'
 
-let aboutComponent = {
+export default {
   restrict: 'E',
   bindings: {},
   template,
   controller
-};
-
-export default aboutComponent;
+}

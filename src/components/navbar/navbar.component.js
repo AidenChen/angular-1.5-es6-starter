@@ -1,12 +1,10 @@
-import template from './navbar.tpl.html';
-import controller from './navbar.controller';
-import './navbar.scss';
+import template from './navbar.tpl.html'
+import controller from './navbar.controller'
+import './navbar.scss'
 
-let navbarComponent = {
+export default {
   restrict: 'E',
   bindings: {},
   template,
   controller
-};
-
-export default navbarComponent;
+}

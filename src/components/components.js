@@ -1,12 +1,10 @@
-import angular from 'angular';
-import Navbar from './navbar';
-import Hero from './hero';
+import angular from 'angular'
+import Navbar from './navbar'
+import Hero from './hero'
 
-let componentModule = angular.module('app.components', [
+export default angular.module('app.components', [
   Navbar,
   Hero
 ])
 
-.name;
-
-export default componentModule;
+.name

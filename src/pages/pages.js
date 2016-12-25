@@ -1,12 +1,10 @@
-import angular from 'angular';
-import Home from './home';
-import About from './about';
+import angular from 'angular'
+import Home from './home'
+import About from './about'
 
-let pageModule = angular.module('app.pages', [
+export default angular.module('app.pages', [
   Home,
   About
 ])
 
-.name;
-
-export default pageModule;
+.name

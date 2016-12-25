@@ -1,9 +1,7 @@
-import template from './app.tpl.html';
-import './app.scss';
+import template from './app.tpl.html'
+import './app.scss'
 
-let appComponent = {
+export default {
   template,
   restrict: 'E'
-};
-
-export default appComponent;
+}

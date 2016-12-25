@@ -1,7 +1,9 @@
-class HeroController {
+export default class HeroController {
   constructor() {
-    this.name = 'hero';
+    this.name = 'hero'
+  }
+
+  $onInit() {
+    console.log(this.testword)
   }
 }
-
-export default HeroController;

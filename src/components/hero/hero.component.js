@@ -1,12 +1,13 @@
-import template from './hero.tpl.html';
-import controller from './hero.controller';
-import './hero.scss';
+import template from './hero.tpl.html'
+import controller from './hero.controller'
+import './hero.scss'
 
-let heroComponent = {
+export default {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    testword: '<'
+  },
   template,
-  controller
-};
-
-export default heroComponent;
+  controller,
+  controllerAs: 'model'
+}
