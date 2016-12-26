@@ -1,12 +1,11 @@
 {
   "name": "angular-1.5-es6-starter",
   "version": "0.0.0",
-  "description": "angular starter",
+  "description": "A Angular.js starter.",
   "author": "AidenChen",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
-    "test": ""
+    "build": "node build/build.js"
   },
   "dependencies": {
     "angular": "^1.5.0",

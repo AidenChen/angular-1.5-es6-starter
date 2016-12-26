@@ -12,6 +12,11 @@ export default function greeting() {
       year: '@',
       month: '@',
       who: '<'
+    },
+    link(scope, element, attr) {
+      element.bind('mouseenter', function() {
+        console.log('hi')
+      })
     }
   }
 }

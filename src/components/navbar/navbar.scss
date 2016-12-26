@@ -2,23 +2,21 @@
 
 .navbar {
   height: 100px;
+  line-height: 100px;
   background-color: $primaryColor;
-  padding: 1rem;
+  padding: 0 20px;
+  display: flex;
 
-  .nav-links,
-  .logo {
+  .nav-links {
     display: inline-block;
-  }
-
-  .logo {
-    margin-right: 50%;
+    flex: 1;
   }
 
   .nav-links span {
-    font-size: 1.6rem;
-  }
-
-  a {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid red;
     color: red;
+    cursor: pointer;
   }
 }

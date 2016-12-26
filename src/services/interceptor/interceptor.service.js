@@ -18,12 +18,13 @@ export default class Interceptor {
   }
 
   response = (resp) => {
+    resp.data.other = 'It\'s from interceptor'
     return resp || this.$q.when(resp)
   }
 
   responseError = (rejection) => {
-    if (rejection !== null && rejection.status === 403) {
-      this.$location.path('/about')
+    if (rejection !== null && rejection.status === 404) {
+      this.$location.path('/')
     }
     return this.$q.reject(rejection)
   }

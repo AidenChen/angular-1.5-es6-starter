@@ -1,18 +1,13 @@
 export default class HomeController {
-  constructor($http, userService) {
+  constructor($http, userService, homeService) {
     this.$http = $http
     this.user = userService
+    this.home = homeService
   }
 
   $onInit() {
     this.randomName()
-
-    const data = {
-      method: 'GET',
-      url: 'api/test'
-    }
-
-    this.$http(data).then(function(resp) {
+    this.home.getTestData().then(function(resp) {
       console.log(resp.data)
     })
   }
@@ -22,4 +17,4 @@ export default class HomeController {
   }
 }
 
-HomeController.$inject = ['$http', 'user']
+HomeController.$inject = ['$http', 'user', 'home']
