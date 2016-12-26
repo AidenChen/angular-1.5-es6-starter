@@ -7,7 +7,7 @@ import Services from 'src/services'
 import Directives from 'src/directives'
 
 import configuration from './app.config'
-import AppComponent from './app.component'
+import appComponent from './app.component'
 
 angular.module('app', [
   uiRouter,
@@ -19,4 +19,4 @@ angular.module('app', [
 
 .config(configuration)
 
-.component('app', AppComponent)
+.component('app', appComponent)
