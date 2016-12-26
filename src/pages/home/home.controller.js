@@ -2,10 +2,11 @@ export default class HomeController {
   constructor($http, userService) {
     this.$http = $http
     this.user = userService
-    this.name = 'home'
   }
 
   $onInit() {
+    this.randomName()
+
     const data = {
       method: 'GET',
       url: 'api/test'
@@ -14,10 +15,6 @@ export default class HomeController {
     this.$http(data).then(function(resp) {
       console.log(resp.data)
     })
-  }
-
-  changeName() {
-    this.name = 'angular-tips'
   }
 
   randomName() {

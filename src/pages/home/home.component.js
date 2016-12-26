@@ -4,7 +4,7 @@ import './home.scss'
 
 export default {
   restrict: 'E',
-  bindings: {},
   template,
-  controller
+  controller,
+  bindings: {}
 }

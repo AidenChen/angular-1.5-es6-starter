@@ -1,10 +1,12 @@
 import angular from 'angular'
 import uiRouter from 'angular-ui-router'
-import Pages from './pages/pages'
-import Components from './components/components'
-import Services from './services/services'
-import Directives from './directives/directives'
-import config from './app.config'
+
+import Pages from 'src/pages'
+import Components from 'src/components'
+import Services from 'src/services'
+import Directives from 'src/directives'
+
+import configuration from './app.config'
 import AppComponent from './app.component'
 
 angular.module('app', [
@@ -15,6 +17,6 @@ angular.module('app', [
   Directives
 ])
 
-.config(config)
+.config(configuration)
 
 .component('app', AppComponent)

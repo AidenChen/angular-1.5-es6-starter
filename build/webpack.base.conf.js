@@ -5,7 +5,7 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
 	entry: {
-		app: './src/index.js'
+		app: './src/app/index.js'
 	},
 	output: {
 		path: config.build.assetsRoot,
@@ -16,10 +16,7 @@ module.exports = {
 		extensions: ['', '.js'],
 		fallback: [path.join(__dirname, '../node_modules')],
 		alias: {
-			'src': path.resolve(__dirname, '../src'),
-			'common': path.resolve(__dirname, '../src/common'),
-			'components': path.resolve(__dirname, '../src/components'),
-			'views': path.resolve(__dirname, '../src/views')
+			'src': path.resolve(__dirname, '../src')
 		}
 	},
 	resolveLoader: {

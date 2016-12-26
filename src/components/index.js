@@ -1,10 +1,10 @@
 import angular from 'angular'
 import Navbar from './navbar'
-import Hero from './hero'
+import Footer from './footer'
 
 export default angular.module('app.components', [
   Navbar,
-  Hero
+  Footer
 ])
 
 .name

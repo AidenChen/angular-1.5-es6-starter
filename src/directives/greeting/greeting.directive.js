@@ -9,9 +9,9 @@ export default function greeting() {
     controller,
     controllerAs: 'model',
     bindToController: {
-      year: '<',
-      month: '<',
-      name: '<'
+      year: '@',
+      month: '@',
+      who: '<'
     }
   }
 }

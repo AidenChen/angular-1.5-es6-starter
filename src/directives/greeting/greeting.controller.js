@@ -1,6 +1,5 @@
 export default class GreetingController {
   $onInit() {
-    console.log(this.name)
     this.date = `${this.year}-${this.month}`
   }
 
